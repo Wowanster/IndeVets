@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+// font-family: 'Nunito Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    &:after{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    &:before{
+        margin: 0;
+        padding: 0;
+        border: 0; 
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+$bg-colorHead:#284854;
+$colorWhite:#fff;
+$colorGren:#8BC441;
+$colorAqua:#60C1BD;
+
+$fontRoboto:'Roboto', sans-serif;
+
+.section{
+    width: 100%;
+    max-width: 1440px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    position: fixed;
+    max-width: 1240px;
+    width: 100%;
+    left: 50%;
+    top: 23px;
+    padding: 0 10px;
+    transform: translate(-50%,0);
+}
+.nav{
+    border-radius: 30px;
+    background-color: $colorAqua;
+    display: flex;
+    padding: 0 30px;
+    height: 81px;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        display: block;
+        color: $colorWhite;
+        font-family: $fontRoboto;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    &__link{
+        padding-left: 50px;
+        color: $bg-colorHead;
+        font-family: $fontRoboto;
+        &:first-child{
+            padding-left: 0;
+        }
+    }
+    &__login{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        display: block;
+        padding: 4px 20px;
+        border: 1px solid $colorWhite;
+        color: $colorWhite;
+    }
+}
+
+.head{
+    background-color: $bg-colorHead;
+    background-size: cover;
+    min-height: 100vh;
+    &__intro{
+        display: flex;
+        height: 100%;
+        padding: 230px 60px 170px 60px;
+    }
+    &__info{
+        max-width: 756px;
+    }
+    &__title{
+        font-family: $fontRoboto;
+        font-size: 8.5rem;
+        color: $colorGren;
+        line-height: 10.2rem;
+        margin-bottom: 45px;
+    }
+    &__subtitle{
+        color: $colorWhite;
+        font-size: 2rem;
+        max-width: 542px;
+    }
+    &__fotoBlock{
+        max-width: 320px;
+    }
+    &__foto{
+        display: block;
+        width: 100%;
+    }
+}
+
+.indeVets{
+    background-color: $colorWhite;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    transform: translate(0,-40%);
+    &__item{
+        padding: 45px 110px 45px 30px;
+        background-color: #F4F6F0;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 80px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    &__images{
+       width: 100px; 
+    }
+    &__foto{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    &__text{
+        padding-left: 46px;
+    }
+    &__title{
+        font-size: 3.7rem;
+        line-height: 4.4rem;
+        color: $colorGren;
+        font-family: $fontRoboto;
+    }
+    &__subtitle{
+        font-size: 2rem;
+        line-height: 2.7rem;
+        color: $colorAqua;
+        max-width: 220px;
+    }
+
+}
