@@ -37,12 +37,14 @@ $bg-colorHead:#284854;
 $colorWhite:#fff;
 $colorGren:#8BC441;
 $colorAqua:#60C1BD;
+$colorSubTitle:#798B56;
 
 $fontRoboto:'Roboto', sans-serif;
 
 .section{
     width: 100%;
     max-width: 1440px;
+    margin: 0 auto;
 }
 .container{
     max-width: 1200px;
@@ -57,6 +59,7 @@ $fontRoboto:'Roboto', sans-serif;
     top: 23px;
     padding: 0 10px;
     transform: translate(-50%,0);
+    z-index: 100;
 }
 .nav{
     border-radius: 30px;
@@ -81,13 +84,14 @@ $fontRoboto:'Roboto', sans-serif;
             padding-left: 0;
         }
     }
-    &__login{
+    &__in{
         font-size: 1.4rem;
         line-height: 1.9rem;
         display: block;
         padding: 4px 20px;
         border: 1px solid $colorWhite;
         color: $colorWhite;
+        display: inline-block;
     }
 }
 
@@ -118,20 +122,20 @@ $fontRoboto:'Roboto', sans-serif;
     &__fotoBlock{
         max-width: 320px;
     }
-    &__foto{
-        display: block;
-        width: 100%;
-    }
 }
-
-.indeVets{
-    background-color: $colorWhite;
+.img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .card{
     display: flex;
     justify-content: center;
     transform: translate(0,-40%);
+    &__wrapper{
+        background-color: $colorWhite; 
+    }
     &__item{
         padding: 45px 110px 45px 30px;
         background-color: #F4F6F0;
@@ -144,11 +148,6 @@ $fontRoboto:'Roboto', sans-serif;
     }
     &__images{
        width: 100px; 
-    }
-    &__foto{
-        width: 100%;
-        display: block;
-        height: auto;
     }
     &__text{
         padding-left: 46px;
@@ -165,5 +164,121 @@ $fontRoboto:'Roboto', sans-serif;
         color: $colorAqua;
         max-width: 220px;
     }
+}
 
+.works{
+    text-align: center;
+    &__title{
+       margin-bottom: 110px;
+    }
+}
+
+.block{
+   &__subtitle{
+    color: $colorAqua;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3rem; 
+   }
+   &__title{
+    font-size: 5.5rem;
+    line-height: 6.4rem;
+    color: $bg-colorHead;  
+   }
+}
+
+.content{
+    padding: 0 30px;
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+    &__images{
+        width: 285px;
+    }
+    &__text{
+        max-width: 541px;
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.7rem;
+        color:$colorSubTitle;
+    }
+    &__title{
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 4.7rem;
+        color: $colorGren;
+        font-family: $fontRoboto;
+        margin: 10px 0;
+    }
+    &__description{
+        line-height: 2.9rem;
+        color: $bg-colorHead;
+    }
+}
+.text--right{
+    margin-left: 120px;
+}
+.text--left{
+    margin-right: 120px;
+}
+
+.mission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__images{
+        max-width: 450px;
+        margin-right: 100px;
+    }
+    &__wrapper{
+        background-color:#F4F6F0;
+        padding: 78px 30px 120px 30px;
+    }
+    &__text{
+        max-width: 512px;
+    }
+    &__description{
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        margin-bottom: 50px;
+    }
+}
+.color--blue{
+    color: $colorAqua;
+    border-color:$colorAqua;
+}
+
+.sounds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__wrapper{
+        background-color: $colorGren;
+        padding: 80px 30px;
+    }
+    &__images{
+        margin-right: 150px;
+    }
+    &--white{
+        color: $colorWhite;
+        max-width:516px;
+        margin-bottom: 55px;
+    }
+    &__subtext{
+        display: flex;
+    }
+    &__description{
+        color: $colorWhite;
+        font-size: 2rem;
+        line-height: 2.7rem;
+        max-width: 240px;
+        &:first-child{
+            margin-right: 100px;
+        }
+    }
 }
