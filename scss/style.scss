@@ -32,6 +32,9 @@ body{
 a{
     text-decoration: none;
 }
+li{
+    list-style-type: none;
+}
 
 $bg-colorHead:#284854;
 $colorWhite:#fff;
@@ -56,17 +59,18 @@ $fontRoboto:'Roboto', sans-serif;
     max-width: 1240px;
     width: 100%;
     left: 50%;
-    top: 23px;
-    padding: 0 10px;
+    top: 2.3rem;
+    padding: 0 1rem;
     transform: translate(-50%,0);
     z-index: 100;
 }
+
 .nav{
-    border-radius: 30px;
+    border-radius: 3rem;
     background-color: $colorAqua;
     display: flex;
-    padding: 0 30px;
-    height: 81px;
+    padding: 0 3rem;
+    height: 8.1rem;
     justify-content: space-between;
     align-items: center;
     &__logo{
@@ -74,10 +78,10 @@ $fontRoboto:'Roboto', sans-serif;
         color: $colorWhite;
         font-family: $fontRoboto;
         font-size: 3rem;
-        line-height: 3.5rem;
+        line-height: 1.2;
     }
     &__link{
-        padding-left: 50px;
+        padding-left: 5rem;
         color: $bg-colorHead;
         font-family: $fontRoboto;
         &:first-child{
@@ -86,10 +90,10 @@ $fontRoboto:'Roboto', sans-serif;
     }
     &__in{
         font-size: 1.4rem;
-        line-height: 1.9rem;
+        line-height: 1.4;
         display: block;
-        padding: 4px 20px;
-        border: 1px solid $colorWhite;
+        padding: 0.4rem 2rem;
+        border: 0.1rem solid $colorWhite;
         color: $colorWhite;
         display: inline-block;
     }
@@ -98,11 +102,11 @@ $fontRoboto:'Roboto', sans-serif;
 .head{
     background-color: $bg-colorHead;
     background-size: cover;
-    min-height: 100vh;
     &__intro{
         display: flex;
         height: 100%;
-        padding: 230px 60px 170px 60px;
+        padding: 23rem 6rem 17rem 6rem;
+        align-items: center;
     }
     &__info{
         max-width: 756px;
@@ -111,8 +115,8 @@ $fontRoboto:'Roboto', sans-serif;
         font-family: $fontRoboto;
         font-size: 8.5rem;
         color: $colorGren;
-        line-height: 10.2rem;
-        margin-bottom: 45px;
+        line-height: 1.2;
+        margin-bottom: 4.5rem;
     }
     &__subtitle{
         color: $colorWhite;
@@ -123,6 +127,7 @@ $fontRoboto:'Roboto', sans-serif;
         max-width: 320px;
     }
 }
+
 .img{
     display: block;
     width: 100%;
@@ -137,20 +142,21 @@ $fontRoboto:'Roboto', sans-serif;
         background-color: $colorWhite; 
     }
     &__item{
-        padding: 45px 110px 45px 30px;
+        padding: 4.5rem 11rem 4.5rem 3rem;
         background-color: #F4F6F0;
         display: flex;
         justify-content: space-between;
-        margin-left: 80px;
+        margin-left: 8rem;
+        align-items: center;
         &:first-child{
             margin-left: 0;
         }
     }
     &__images{
-       width: 100px; 
+       max-width: 100px; 
     }
     &__text{
-        padding-left: 46px;
+        padding-left: 4.6rem;
     }
     &__title{
         font-size: 3.7rem;
@@ -169,7 +175,7 @@ $fontRoboto:'Roboto', sans-serif;
 .works{
     text-align: center;
     &__title{
-       margin-bottom: 110px;
+       margin-bottom: 11rem;
     }
 }
 
@@ -188,12 +194,12 @@ $fontRoboto:'Roboto', sans-serif;
 }
 
 .content{
-    padding: 0 30px;
+    padding: 0 3rem;
     &__item{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 80px;
+        margin-bottom: 8rem;
     }
     &__images{
         width: 285px;
@@ -213,18 +219,20 @@ $fontRoboto:'Roboto', sans-serif;
         line-height: 4.7rem;
         color: $colorGren;
         font-family: $fontRoboto;
-        margin: 10px 0;
+        margin: 1rem 0;
     }
     &__description{
         line-height: 2.9rem;
         color: $bg-colorHead;
     }
 }
+
 .text--right{
-    margin-left: 120px;
+    margin-left: 12rem;
 }
+
 .text--left{
-    margin-right: 120px;
+    margin-right: 12rem;
 }
 
 .mission{
@@ -233,11 +241,11 @@ $fontRoboto:'Roboto', sans-serif;
     align-items: center;
     &__images{
         max-width: 450px;
-        margin-right: 100px;
+        margin-right: 10rem;
     }
     &__wrapper{
         background-color:#F4F6F0;
-        padding: 78px 30px 120px 30px;
+        padding: 7.8rem 3rem 12rem 3rem;
     }
     &__text{
         max-width: 512px;
@@ -245,9 +253,10 @@ $fontRoboto:'Roboto', sans-serif;
     &__description{
         font-size: 1.8rem;
         line-height: 3.2rem;
-        margin-bottom: 50px;
+        margin-bottom: 5rem;
     }
 }
+
 .color--blue{
     color: $colorAqua;
     border-color:$colorAqua;
@@ -259,15 +268,15 @@ $fontRoboto:'Roboto', sans-serif;
     align-items: center;
     &__wrapper{
         background-color: $colorGren;
-        padding: 80px 30px;
+        padding: 8rem 3rem;
     }
     &__images{
-        margin-right: 150px;
+        margin-right: 15rem;
     }
     &--white{
         color: $colorWhite;
         max-width:516px;
-        margin-bottom: 55px;
+        margin-bottom: 5.5rem;
     }
     &__subtext{
         display: flex;
@@ -278,7 +287,122 @@ $fontRoboto:'Roboto', sans-serif;
         line-height: 2.7rem;
         max-width: 240px;
         &:first-child{
-            margin-right: 100px;
+            margin-right: 10rem;
         }
+    }
+}
+
+.footer{
+    background-color: $colorWhite;
+    padding: 5rem 3rem;
+    &__content{
+        padding-top: 7.8rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__left{
+        max-width: 600px;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__veterinarians{
+        margin-right: 2rem;
+    }
+    &__title{
+        color: $bg-colorHead;
+        letter-spacing: 0.2rem;
+        line-height: 1.7rem;
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+    }
+    &__link{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: $colorAqua;
+        margin-bottom: 1.8rem;
+        margin-right: 1rem;
+    }
+    &__contacts{
+        margin-top: 5rem;
+        margin-bottom: 3.3rem;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3rem;
+    }
+    &__images{
+        max-width: 20rem;
+    }
+    &__findUs{
+        margin-left: 2rem;
+    }
+    &__adr{
+        margin-bottom: 3rem;
+    }
+    &__adress{
+        font-family: $fontRoboto;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        color: $colorAqua;
+        font-style: normal;
+        margin-bottom: 0.4rem;
+    }
+    &__copyright{
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        color: $bg-colorHead;
+    }
+}
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 8px;
+    }
+    .card__item{
+        padding: 2.2rem 5.5rem 2.2rem 1.5rem;
+        margin-left: 4rem;
+    }
+}
+@media(max-width:880px){
+    .card__item{
+        padding: 1.3rem 2.3rem 1.3rem 0.8rem;
+        margin-left: 2rem;
+    }
+}
+@media(max-width:750px){
+    html{
+        font-size: 6px;
+    }
+    .card__images {
+        max-width: 80px;
+    }
+}
+@media(max-width:600px){
+    .card__images {
+        max-width: 50px;
+    }
+}
+@media(max-width:550px){
+    html{
+        font-size: 5px;
+    }
+}
+@media(max-width:450px){
+    .card__images {
+        max-width: 30px;
+    }
+}
+@media(max-width:400px){
+    html{
+        font-size: 4px;
     }
 }
