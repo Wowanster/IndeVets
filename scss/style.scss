@@ -49,10 +49,6 @@ $fontRoboto:'Roboto', sans-serif;
     max-width: 1440px;
     margin: 0 auto;
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .header{
     position: fixed;
@@ -103,13 +99,7 @@ $fontRoboto:'Roboto', sans-serif;
     background-color: $bg-colorHead;
     background-size: cover;
     &__intro{
-        display: flex;
-        height: 100%;
         padding: 23rem 6rem 17rem 6rem;
-        align-items: center;
-    }
-    &__info{
-        max-width: 756px;
     }
     &__title{
         font-family: $fontRoboto;
@@ -123,9 +113,6 @@ $fontRoboto:'Roboto', sans-serif;
         font-size: 2rem;
         max-width: 542px;
     }
-    &__fotoBlock{
-        max-width: 320px;
-    }
 }
 
 .img{
@@ -134,10 +121,9 @@ $fontRoboto:'Roboto', sans-serif;
     height: auto;
 }
 
-.card{
-    display: flex;
-    justify-content: center;
+.start{
     transform: translate(0,-40%);
+    display: flex;
     &__wrapper{
         background-color: $colorWhite; 
     }
@@ -148,12 +134,13 @@ $fontRoboto:'Roboto', sans-serif;
         justify-content: space-between;
         margin-left: 8rem;
         align-items: center;
+        height: 100%;
         &:first-child{
             margin-left: 0;
         }
     }
     &__images{
-       max-width: 100px; 
+       width: 100px;
     }
     &__text{
         padding-left: 4.6rem;
@@ -194,18 +181,8 @@ $fontRoboto:'Roboto', sans-serif;
 }
 
 .content{
-    padding: 0 3rem;
     &__item{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-bottom: 8rem;
-    }
-    &__images{
-        width: 285px;
-    }
-    &__text{
-        max-width: 541px;
     }
     &__subtitle{
         font-weight: 700;
@@ -227,21 +204,9 @@ $fontRoboto:'Roboto', sans-serif;
     }
 }
 
-.text--right{
-    margin-left: 12rem;
-}
-
-.text--left{
-    margin-right: 12rem;
-}
-
 .mission{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     &__images{
         max-width: 450px;
-        margin-right: 10rem;
     }
     &__wrapper{
         background-color:#F4F6F0;
@@ -263,15 +228,10 @@ $fontRoboto:'Roboto', sans-serif;
 }
 
 .sounds{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     &__wrapper{
         background-color: $colorGren;
-        padding: 8rem 3rem;
-    }
-    &__images{
-        margin-right: 15rem;
+        padding: 8rem 0;
     }
     &--white{
         color: $colorWhite;
@@ -294,15 +254,7 @@ $fontRoboto:'Roboto', sans-serif;
 
 .footer{
     background-color: $colorWhite;
-    padding: 5rem 3rem;
-    &__content{
-        padding-top: 7.8rem;
-        display: flex;
-        justify-content: space-around;
-    }
-    &__left{
-        max-width: 600px;
-    }
+    padding: 5rem 0;
     &__info{
         display: flex;
         justify-content: space-between;
@@ -332,14 +284,6 @@ $fontRoboto:'Roboto', sans-serif;
     &__list{
         display: flex;
         justify-content: space-between;
-    }
-    &__right{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 3rem;
-    }
-    &__images{
-        max-width: 20rem;
     }
     &__findUs{
         margin-left: 2rem;
@@ -373,7 +317,7 @@ $fontRoboto:'Roboto', sans-serif;
     }
 }
 @media(max-width:880px){
-    .card__item{
+    .start__item{
         padding: 1.3rem 2.3rem 1.3rem 0.8rem;
         margin-left: 2rem;
     }
@@ -382,12 +326,12 @@ $fontRoboto:'Roboto', sans-serif;
     html{
         font-size: 6px;
     }
-    .card__images {
+    .start__images {
         max-width: 80px;
     }
 }
 @media(max-width:600px){
-    .card__images {
+    .start__images {
         max-width: 50px;
     }
 }
@@ -397,7 +341,7 @@ $fontRoboto:'Roboto', sans-serif;
     }
 }
 @media(max-width:450px){
-    .card__images {
+    .start__images {
         max-width: 30px;
     }
 }
