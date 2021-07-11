@@ -30,6 +30,9 @@ body {
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: none;
+}
 
 li {
   list-style-type: none;
@@ -50,7 +53,7 @@ li {
   padding: 0 1rem;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  z-index: 100;
+  z-index: 10;
 }
 
 .nav {
@@ -74,14 +77,25 @@ li {
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
   line-height: 1.2;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.nav__logo:hover {
+  color: #284854;
 }
 .nav__link {
   padding-left: 5rem;
   color: #284854;
   font-family: "Roboto", sans-serif;
+  -webkit-transition: font-size 0.3s;
+  transition: font-size 0.3s;
 }
 .nav__link:first-child {
   padding-left: 0;
+}
+.nav__link:hover {
+  color: #284854;
+  font-size: 2rem;
 }
 .nav__in {
   font-size: 1.4rem;
@@ -91,6 +105,13 @@ li {
   border: 0.1rem solid #fff;
   color: #fff;
   display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nav__in:hover {
+  color: #284854;
+  border: none;
+  font-weight: 700;
 }
 
 .head {
@@ -282,6 +303,9 @@ li {
   margin-bottom: 1.8rem;
   margin-right: 1rem;
 }
+.footer__link:hover {
+  text-decoration: none;
+}
 .footer__contacts {
   margin-top: 5rem;
   margin-bottom: 3.3rem;
@@ -312,6 +336,73 @@ li {
   font-size: 1.3rem;
   line-height: 1.7rem;
   color: #284854;
+}
+
+.login {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.login__background {
+  background-color: #000;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+}
+.login__form {
+  background-color: #8BC441;
+  padding: 2rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border-radius: 0.5rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 102;
+  text-align: center;
+}
+.login__icon {
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: auto;
+}
+.login__field {
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+}
+.login__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.login__pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+.login__submit {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+}
+.login__close {
+  padding: 0 0.5rem;
+}
+.login__exit {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #000;
+}
+.login--active {
+  display: block;
 }
 
 @media (max-width: 1200px) {
