@@ -10,28 +10,43 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="burger__background"></div>
    <header class="header">
         <div class="nav">
             <a class="nav__logo" href="#">IndeVets</a>
             <div class="nav__href">
-                <a href="#" class="nav__link">Veterinarians</a>
-                <a href="#" class="nav__link">Hospitals</a>
-                <a href="#" class="nav__link">Why IndeVets?</a>
+                <a href="#" class="nav__link" data-id="Veterinarians">Veterinarians</a>
+                <a href="#" class="nav__link" data-id="Hospitals">Hospitals</a>
+                <a href="#" class="nav__link" data-id="Why IndeVets?">Why IndeVets?</a>
             </div>
-            <a class="nav__in" href="#">Login</a>
+            <div class="burger__wrapper">
+                <a class="nav__in nav--active" href="#">Login</a>
+                <div class="burger">
+                    <span class="burger__top"></span>
+                    <span class="burger__two"></span>
+                    <span class="burger__bottom"></span>
+                </div>
+            </div>  
+        </div>
+        <div class="burger__link">
+            <ul>
+                <li><a href="#" class="nav__link">Veterinarians</a></li>
+                <li><a href="#" class="nav__link">Hospitals</a></li>
+                <li><a href="#" class="nav__link">Why IndeVets?</a></li>
+            </ul>
         </div>
    </header>
    <main class="main">
        <div class="section">
            <div class="head">
-               <div class="container-fluid">
+               <div class="container">
                    <div class="head__intro">
-                       <div class="row align-items-center">
-                           <div class="col-8"> 
+                       <div class="row align-items-center justify-content-center">
+                           <div class="col-12 col-sm-8"> 
                                 <h1 class="head__title">Veterinary staffing done right.</h1>
                                 <div class="head__subtitle">IndeVets is on a mission to make veterinary medicine better. We unite the nation’s top veterinarians and animal hospitals to deliver what matters most in animal care –– happy, healthy doctors performing at their best.</div>
                             </div>
-                           <div class="col-4">
+                           <div class="col-5 col-sm-4">
                             <img src="images/Ledies.png" alt="Ledies" class="img">
                            </div>
                        </div>
@@ -41,9 +56,9 @@
        </div>
        <div class="section">
            <div class="start__wrapper">
-               <div class="container-fluid">
+               <div class="container">
                    <div class="row start">
-                       <div class="col w-50">
+                       <div class="col-md-6 col-sm-12 start__col" id="Veterinarians">
                             <div class="start__item">
                                 <div class="start__images">
                                     <img src="images/LediAndCat.png" alt="lediandcat" class="img">
@@ -54,7 +69,7 @@
                                 </div>
                             </div>
                        </div>
-                       <div class="col w-50">
+                       <div class="col-md-6 col-sm-12 start__col">
                             <div class="start__item">
                                 <div class="start__images">
                                     <img src="images/CatDog.png" alt="ccatdog" class="img">
@@ -77,13 +92,13 @@
                     <h2 class="works__title block__title">How IndeVets Works</h2>
                    </div>
                </div>
-               <div class="row content-item mb-5">
-                   <div class="col-3">
+               <div class="row mb-5 justify-content-center">
+                   <div class="col-4 col-sm-3">
                         <div class="content__images">
                             <img src="images/DogI.png" alt="DogI" class="img">
                         </div>
                    </div>
-                   <div class="col-9">
+                   <div class="col-12 col-sm-9">
                         <div class="content__text">
                             <div class="content__subtitle">Step one...</div>
                             <div class="content__title">We hire great vets.</div>
@@ -91,27 +106,32 @@
                         </div>
                    </div>
                 </div>
-                <div class="row content-item mb-5">
-                    <div class="col-9">
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-4 col-sm-3 works__imagesSm">
+                        <div class="content__images">
+                           <img src="images/DogPartners.png" alt="partners" class="img">
+                        </div>
+                   </div>  
+                    <div class="col-12 col-sm-9">
                         <div class="content__text">
                             <div class="content__subtitle">Next...</div>
                             <div class="content__title">We partner with the best workplaces.</div>
                             <div class="content__description">We’ve built partnerships with more than 800 forward-thinking, best-in-class hospitals. We expect a lot from our vets, so the same applies to our hospitals. We partner with hospitals that not only have high medical standards, but also have a commitment to maintaining a healthy workplace for staff and patients.</div>
                         </div>
                    </div>
-                    <div class="col-3">
+                    <div class="col-4 col-sm-3 works__images">
                          <div class="content__images">
                             <img src="images/DogPartners.png" alt="partners" class="img">
                          </div>
                     </div>                  
                 </div>
-                <div class="row content-item mb-5">
-                    <div class="col-3">
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-3 col-sm-3 ">
                         <div class="content__images">
                             <img src="images/Happy.png" alt="happy" class="img">
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-12 col-sm-9">
                         <div class="content__text">
                             <div class="content__subtitle">The result?</div>
                             <div class="content__title">Happy vets. Happy hospitals. Better medicine.</div>
@@ -124,13 +144,13 @@
        <div class="section">
            <div class="mission__wrapper">
                <div class="container">
-                   <div class="row align-items-center">
-                       <div class="col">
+                   <div class="row align-items-center justify-content-center">
+                       <div class="col-sm-6 col-6">
                             <div class="mission__images">
                                 <img src="images/Mission.png" alt="mission" class="img">
                             </div>
                        </div>
-                       <div class="col">
+                       <div class="col-sm-6 col-12">
                             <div class="block__subtitle">Who We Are</div>
                             <h2 class="block__title">Our Mission</h2>
                             <div class="mission__description">Our team is united by a mission to make veterinary medicine better. We’ve been through the long rotations, the office drama, and the last-minute schedule changes. It drove the joy out of our jobs and, more importantly, out of our lives. So we took it upon ourselves to make a change.</div>
@@ -143,17 +163,17 @@
        <div class="section">
            <div class="sounds__wrapper">
                <div class="container">
-                   <div class="row align-items-center">
-                       <div class="col-5">
+                   <div class="row align-items-center justify-content-center">
+                       <div class="col-sm-6 col-4">
                             <div class="sounds__images">
                                 <img class="img" src="images/DogVelo.png" alt="dogvelo">
                             </div>
                        </div>
-                       <div class="col-7">
-                            <h2 class="block__title sounds--white">Sounds pretty good, right? Let’s do this.</h2>
-                            <div class="sounds__subtext">
-                                <div class="sounds__description">I want to be an IndeVet. Take me to the application page!</div>
-                                <div class="sounds__description">We want to be one of your awesome hospital partners.</div>
+                       <div class="col-sm-6 col-12">
+                            <div class="block__title sounds--white">Sounds pretty good, right? Let’s do this.</div>
+                            <div class="row justify-content-center">
+                                <div class="sounds__description col-5">I want to be an IndeVet. Take me to the application page!</div>
+                                <div class="sounds__description col-5">We want to be one of your awesome hospital partners.</div>
                             </div>
                        </div>
                    </div>
@@ -165,7 +185,7 @@
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-7 col-md-6">
                         <div class="footer__info">
                                 <div class="footer__veterinarians">
                                     <h4 class="footer__title">Veterinarians</h4>
@@ -184,21 +204,11 @@
                                     </ul>
                                 </div>
                         </div> 
-                        <div class="footer__contacts">
-                                <ul class="footer__list">
-                                    <li><a href="#" class="footer__link">Why IndeVets?</a></li>
-                                    <li><a href="#" class="footer__link">Blog</a></li>
-                                    <li><a href="#" class="footer__link">Jobs</a></li>
-                                    <li><a href="#" class="footer__link">Contact Us</a></li>
-                                    <li><a href="#" class="footer__link">Login</a></li>
-                                    <li><a href="#" class="footer__link">Privacy Policy</a></li>
-                                </ul>
-                        </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-6 col-md-2 footer--images">
                         <img class="img" src="images/contact.png" alt="contact">
                     </div>
-                    <div class="col-3">
+                    <div class="col-5 col-md-3">
                         <div class="footer__findUs">
                             <h4 class="footer__title">Find Us</h4>
                             <ul class="footer__adr">
@@ -206,11 +216,27 @@
                                 <li><address class="footer__adress">Suite 402</address></li>
                                 <li><address class="footer__adress">Philadelphia, PA 19123</address></li>
                             </ul>
-                            <ul>
-                                <li><a href="tel:(833) 463-3838" class="footer__link">(833) IndeVets</a></li>
-                                <li><a href="tel:(833) 463-3838" class="footer__link">(833) 463-3838</a></li>
+                            <ul class="footer__tel">
+                                <li><a href="tel:+8334633838" class="footer__link">(833) IndeVets</a></li>
+                                <li><a href="tel:+8334633838" class="footer__link">(833) 463-3838</a></li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="footer__contacts d-flex">
+                            <ul class="footer__list">
+                                <li><a href="#" class="footer__link">Why IndeVets?</a></li>
+                                <li><a href="#" class="footer__link">Blog</a></li>
+                                <li><a href="#" class="footer__link">Jobs</a></li>
+                                <li><a href="#" class="footer__link">Contact Us</a></li>
+                                <li><a href="#" class="footer__link nav--active">Login</a></li>
+                                <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                            </ul>
+                            <ul class="footer__telSm">
+                                <li><a href="tel:+8334633838" class="footer__link">(833) IndeVets</a></li>
+                                <li><a href="tel:+8334633838" class="footer__link">(833) 463-3838</a></li>
+                            </ul>
+                    </div>
                     </div>
                 </div>
                 <div class="footer__copyright">© IndeVets 2021</div>
@@ -220,20 +246,20 @@
    <div class="login">
        <div class="login__background login__close"></div>
            <form class="login__form" action="">
-            <span class="login__close login__exit">X</span>
+                <span class="login__close login__exit">X</span>
                <div class="login__email">
                     <div class="login__images">
-                        <img src="images/user.svg" class="login__icon">
+                        <img src="images/user.svg" class="login__icon" alt="login email">
                     </div>
                     <input type="email" class="login__field" placeholder="Login">
-               </div>
+               </div> 
                <div class="login__pass">
-                   <img src="images/padlock.svg" class="login__icon">
+                   <img src="images/padlock.svg" alt="login password" class="login__icon">
                    <input type="password" placeholder="Password" class="login__field">
                </div>  
                <input type="submit" class="login__submit" value="Login"> 
            </form>>
-   </div>
+    </div>
+   <script src="js/app.js"></script>
 </body>
-<script src="js/app.js" type="text/javascript"></script>
 </html>
