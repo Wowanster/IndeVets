@@ -47,3 +47,13 @@ window.addEventListener('resize',function(){
 
 //scroll
 
+document.addEventListener('click',function(event){
+    let anhors=event.target.hash;
+    event.preventDefault();
+    if(anhors!=undefined && anhors!=""){
+        document.querySelector(anhors).scrollIntoView({
+            behavior: 'smooth',
+            block:'start',
+        })
+    }
+})
