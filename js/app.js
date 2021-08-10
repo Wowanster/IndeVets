@@ -30,18 +30,21 @@ burger.addEventListener('click', function(){
 });
 document.addEventListener('click',function(event){
     if(event.target.classList.contains('burger__background')){
-        burger.classList.remove('burger--active');
-        burgerLink.classList.remove('burger__menu');
-        burgerBack.classList.remove('burger--isAct');
+        remove();
     }
 });
+
+//remuve class burger active
+function remove(){
+    burger.classList.remove('burger--active');
+    burgerLink.classList.remove('burger__menu');
+    burgerBack.classList.remove('burger--isAct');
+};
 
 //window resize
 window.addEventListener('resize',function(){
     if(document.documentElement.clientWidth>768){
-        burgerLink.classList.remove('burger__menu');
-        burger.classList.remove('burger--active');
-        burgerBack.classList.remove('burger--isAct');
+        remove();
     }
 })
 
@@ -53,7 +56,8 @@ document.addEventListener('click',function(event){
     if(anhors!=undefined && anhors!=""){
         document.querySelector(anhors).scrollIntoView({
             behavior: 'smooth',
-            block:'start',
+            block: 'center',
         })
+        remove(); 
     }
 })

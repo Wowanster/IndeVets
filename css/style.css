@@ -245,8 +245,8 @@ li {
 
 .start {
   position: absolute;
-  right: 5rem;
-  left: 5rem;
+  right: 10%;
+  left: 10%;
   -webkit-transform: translate(0, -40%);
           transform: translate(0, -40%);
 }
@@ -281,7 +281,7 @@ li {
   max-height: 100px;
 }
 .start__text {
-  padding-left: 4.6rem;
+  padding-left: 3.6rem;
 }
 .start__title {
   font-size: 3.7rem;
@@ -521,6 +521,11 @@ li {
 
   .start__item {
     padding: 2rem 5rem 2rem 1.5rem;
+  }
+
+  .start__title {
+    font-size: 3rem;
+    line-height: 3.2rem;
   }
 
   .burger__bottom {
