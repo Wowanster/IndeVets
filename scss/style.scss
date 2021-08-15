@@ -50,6 +50,12 @@ $fontRoboto:'Roboto', sans-serif;
 .section{
     width: 100%;
     margin: 0 auto;
+    opacity: 0;
+    &--show{
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    
 }
 
 .header{
@@ -503,9 +509,17 @@ $fontRoboto:'Roboto', sans-serif;
 @media(max-width:768px){
     .head__title{
         font-size: 6.5rem;
+        text-align: center;
     }
     .head__intro {
         padding-top: 14rem;
+    }
+    .head__subtitle {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .block__title{
+        text-align: center;
     }
     .nav{
         &__href{

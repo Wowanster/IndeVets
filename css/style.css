@@ -41,6 +41,12 @@ li {
 .section {
   width: 100%;
   margin: 0 auto;
+  opacity: 0;
+}
+.section--show {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .header {
@@ -535,10 +541,20 @@ li {
 @media (max-width: 768px) {
   .head__title {
     font-size: 6.5rem;
+    text-align: center;
   }
 
   .head__intro {
     padding-top: 14rem;
+  }
+
+  .head__subtitle {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .block__title {
+    text-align: center;
   }
 
   .nav__href {
